@@ -65,7 +65,7 @@ def userSchema(user):
 #find
 @app.get("/")
 async def read_root():
-   return {"Hello": "World"}
+   return {"Hello": "klk"}
 
 @app.get("/users/")
 async def getUsers():
