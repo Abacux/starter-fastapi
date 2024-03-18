@@ -24,8 +24,8 @@ class User(BaseModel):
    password: str
    name: str
    lastName: Optional[str] = "undefined"
-   telefono: Optional[str]
-   historialCompra: dict
+   phoneNumber: Optional[str]
+   shoppingHistory: dict
    
 
 """{
@@ -34,8 +34,8 @@ class User(BaseModel):
   "password": "password",
   "name": "userName",
   "lastName": "opcional",
-  "telefono": "userName",
-  "historialCompra": {}
+  "phoneNumber": "userName",
+  "shoppingHistory": {}
 }"""
 
 def user_schema(user) -> dict:
@@ -44,8 +44,8 @@ def user_schema(user) -> dict:
         "password": user["password"],
         "name": user["name"],
         "lastName": user["lastName"],
-        "telefono": user["telefono"],
-        "historialCompra": user["historialCompra"]
+        "phoneNumber": user["telefono"],
+        "shoppingHistory": user["shoppingHistory"]
         }
 
 
